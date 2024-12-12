@@ -1,0 +1,453 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:sma="clr-namespace:System.Management.Automation;assembly=System.Management.Automation" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:uas="clr-namespace:UiPath.Activities.System;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Testing.Activities.Models</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>UiPath.Activities.Contracts</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.Activities.System</x:String>
+      <x:String>System.Management.Automation</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Management.Automation</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="782.4000000000001,4290.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Stock Recommendation" sap:VirtualizedContainerService.HintSize="721.6,4267.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="sd:DataTable" Name="StockValue_dt" />
+        <Variable x:TypeArguments="ss:SecureString" Name="Pass_sec" />
+        <Variable x:TypeArguments="x:String" Name="UserID_str" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <TryCatch DisplayName="Reading excel Exception Handling" sap:VirtualizedContainerService.HintSize="688,694.4" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+        <TryCatch.Try>
+          <Sequence DisplayName="Reading Excel" sap:VirtualizedContainerService.HintSize="416,431.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="URL" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="Excel_URL" CacheStrategy="None" DisplayName="Get Asset" FolderPath="Shared" sap:VirtualizedContainerService.HintSize="382.4,175.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
+              <ui:GetRobotAsset.Value>
+                <OutArgument x:TypeArguments="x:String">[URL]</OutArgument>
+              </ui:GetRobotAsset.Value>
+            </ui:GetRobotAsset>
+            <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[StockValue_dt]" DisplayName="Reading Stock Excel" sap:VirtualizedContainerService.HintSize="382.4,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Stock" WorkbookPath="[URL]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ReadRange>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382.4,76" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Reading the Stock Excel&quot;]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+          </Sequence>
+        </TryCatch.Try>
+        <TryCatch.Catches>
+          <Catch x:TypeArguments="si:IOException" sap:VirtualizedContainerService.HintSize="419.2,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ActivityAction x:TypeArguments="si:IOException">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="si:IOException" Name="exception" />
+              </ActivityAction.Argument>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334.4,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Error" Message="[&quot;Unable to access the file&quot;]" />
+            </ActivityAction>
+          </Catch>
+        </TryCatch.Catches>
+      </TryCatch>
+      <TryCatch DisplayName="Get Credential Exception Handling" sap:VirtualizedContainerService.HintSize="688,406.4" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+        <TryCatch.Try>
+          <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="email_credential" CacheStrategy="None" DisplayName="Get Credential" FolderPath="Shared" sap:VirtualizedContainerService.HintSize="334.4,143.2" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[Pass_sec]" Username="[UserID_str]" />
+        </TryCatch.Try>
+        <TryCatch.Catches>
+          <Catch x:TypeArguments="uas:CredentialsServiceException" sap:VirtualizedContainerService.HintSize="403.2,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ActivityAction x:TypeArguments="uas:CredentialsServiceException">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="uas:CredentialsServiceException" Name="exception" />
+              </ActivityAction.Argument>
+            </ActivityAction>
+          </Catch>
+        </TryCatch.Catches>
+      </TryCatch>
+      <Sequence DisplayName="Stock Validation" sap:VirtualizedContainerService.HintSize="688,3083.2" sap2010:WorkflowViewState.IdRef="Sequence_10">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[StockValue_dt]" DisplayName="Iterating Stock Names" sap:VirtualizedContainerService.HintSize="654.4,3000" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+          <ui:ForEachRow.Body>
+            <ActivityAction x:TypeArguments="sd:DataRow">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="620.8,2811.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:String" Name="Web_url" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="Web_URL" CacheStrategy="None" DisplayName="Get Asset" FolderPath="Shared" sap:VirtualizedContainerService.HintSize="587.2,175.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_2">
+                  <ui:GetRobotAsset.Value>
+                    <OutArgument x:TypeArguments="x:String">[Web_url]</OutArgument>
+                  </ui:GetRobotAsset.Value>
+                </ui:GetRobotAsset>
+                <Sequence DisplayName="opening Browser nd Typing Stock Names" sap:VirtualizedContainerService.HintSize="587.2,2576" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <TryCatch DisplayName="Stock Validation Exception Handling" sap:VirtualizedContainerService.HintSize="553.6,2492.8" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+                    <TryCatch.Try>
+                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Opening Each Stock In Google" sap:VirtualizedContainerService.HintSize="516.8,2215.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="33bd7faf-1ddd-412f-a29e-9b82b4cc1b80" Version="V2">
+                        <uix:NApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="483.2,1998.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="x:String" Name="stock_val" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SELECT  country'" sap:VirtualizedContainerService.HintSize="449.6,139.2" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                <ui:Click.CursorPosition>
+                                  <ui:CursorPosition Position="Center">
+                                    <ui:CursorPosition.OffsetX>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetX>
+                                    <ui:CursorPosition.OffsetY>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetY>
+                                  </ui:CursorPosition>
+                                </ui:Click.CursorPosition>
+                                <ui:Click.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b5e70f2d-f8f9-4fd3-9f68-dad8b41971bf" InformativeScreenshot="5e3d3e08751fdfd3efc296714fa817ef" Selector="&lt;webctrl id='country' tag='SELECT' /&gt;">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:Click.Target>
+                              </ui:Click>
+                              <uix:NSelectItem DisplayName="Select Item 'Exxon RPA Corp.'" sap:VirtualizedContainerService.HintSize="449.6,189.6" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[CurrentRow(&quot;Stock Name&quot;).ToString]" ScopeIdentifier="33bd7faf-1ddd-412f-a29e-9b82b4cc1b80" Version="V4">
+                                <uix:NSelectItem.Items>
+                                  <scg:List x:TypeArguments="x:String" Capacity="4">
+                                    <x:String>----- Select -----</x:String>
+                                    <x:String>Exenon UI Pharma.</x:String>
+                                    <x:String>WEX Academy Inc.</x:String>
+                                    <x:String>Exxon RPA Corp.</x:String>
+                                  </scg:List>
+                                </uix:NSelectItem.Items>
+                                <uix:NSelectItem.Target>
+                                  <uix:TargetAnchorable BrowserURL="rpachallenge.com/assets/rpaStockMarket/index.html" CVScreenId="0dc8f7b8-fd55-4bf1-af66-f2102c51bf0f" ContentHash="XoBi6cyqgkCj9Dq8dEyHww" CvElementArea="58, 413, 203, 31" CvType="InputBox" DesignTimeRectangle="59, 415, 200, 28" DesignTimeScaleFactor="1.25" ElementType="DropDown" FuzzySelectorArgument="&lt;webctrl id='country' tag='SELECT' type='' class='' aaname='' /&gt;" Guid="6c5bf5da-3fee-4273-a971-a95ec0d30437" InformativeScreenshot="8f6656cadd150090fb35e8864211692a.png" Reference="qtKZT-ISXkejcijuLne70w/OWStvbySDUWzTYMsVRQsGg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='RPA Stock Market' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                </uix:NSelectItem.Target>
+                              </uix:NSelectItem>
+                              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT'" sap:VirtualizedContainerService.HintSize="449.6,139.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                <ui:Click.CursorPosition>
+                                  <ui:CursorPosition Position="Center">
+                                    <ui:CursorPosition.OffsetX>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetX>
+                                    <ui:CursorPosition.OffsetY>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetY>
+                                  </ui:CursorPosition>
+                                </ui:Click.CursorPosition>
+                                <ui:Click.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a5ffaf72-8b00-4137-aa98-04cf6c3ca16b" InformativeScreenshot="bbcefead06513f9e32ed4be9dd212123" Selector="&lt;webctrl tag='INPUT' type='image' /&gt;">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:Click.Target>
+                              </ui:Click>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="449.6,176" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Selected The Stock&quot;]">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:LogMessage>
+                              <uix:NGetText DisplayName="Extracting Stock Price" sap:VirtualizedContainerService.HintSize="449.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="33bd7faf-1ddd-412f-a29e-9b82b4cc1b80" TextString="[stock_val]" Version="V4">
+                                <uix:NGetText.Target>
+                                  <uix:TargetAnchorable BrowserURL="rpachallenge.com/assets/rpaStockMarket/index.html" DesignTimeRectangle="349, 543, 110, 63" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='cnt' tag='SPAN' type='' class='' /&gt;" Guid="20b63f35-ff50-4b5e-b465-a2a973d5c95a" InformativeScreenshot="381a94c07222d8c30afbad5f9423e95b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='RPA Stock Market' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                                </uix:NGetText.Target>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </uix:NGetText>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Extracting the Stock Value&quot;]">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:LogMessage>
+                              <If sap2010:Annotation.AnnotationText="It Is comparing The Difference between Current Stock Price and The Fixed Stock Price" Condition="[Cdbl(stock_val) &lt; Cdbl(CurrentRow(1))]" DisplayName="Validating Stock Price" sap:VirtualizedContainerService.HintSize="449.6,1018.4" sap2010:WorkflowViewState.IdRef="If_1">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <If.Then>
+                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,405.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                    <Sequence.Variables>
+                                      <Variable x:TypeArguments="x:String" Name="UserID_str" />
+                                      <Variable x:TypeArguments="ss:SecureString" Name="Pass_sec" />
+                                    </Sequence.Variables>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382.4,176" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Bought The &quot;+CurrentRow(&quot;Stock Name&quot;).ToString+&quot;Stocks&quot;]" />
+                                    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" Password="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[CurrentRow(&quot;Stock Name&quot;).ToString+&quot; Stock Has been Bought at a price of $ &quot;+stock_val]" DisplayName="Send SMTP Mail Message" Email="[UserID_str]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="382.4,169.6" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Port="587" SecureConnection="Auto" SecurePassword="[Pass_sec]" Server="smtp.gmail.com" Subject="[&quot;Confirmation Mail for Buying &quot;+ CurrentRow(&quot;Stock Name&quot;).tostring]" To="pavankumarpyarasani@gmail.com">
+                                      <ui:SendMail.Files>
+                                        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                                      </ui:SendMail.Files>
+                                    </ui:SendMail>
+                                  </Sequence>
+                                </If.Then>
+                                <If.Else>
+                                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,405.6" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382.4,176" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Sold The &quot;+CurrentRow(&quot;Stock Name&quot;).ToString+&quot;Stock&quot;]" />
+                                    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" Password="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;Sold &quot;+CurrentRow(&quot;Stock Name&quot;).ToString+&quot;Stocks at a price of $ &quot;+ stock_val]" DisplayName="Send SMTP Mail Message" Email="[UserID_str]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="382.4,169.6" sap2010:WorkflowViewState.IdRef="SendMail_5" IgnoreCRL="False" IsBodyHtml="False" Port="587" SecureConnection="Auto" SecurePassword="[Pass_sec]" Server="smtp.gmail.com" Subject="[&quot;Confimation Mail For Selling&quot;+CurrentRow(&quot;Stock Name&quot;).ToString]" To="pavankumarpyarasani@gmail.com">
+                                      <ui:SendMail.Files>
+                                        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                                      </ui:SendMail.Files>
+                                    </ui:SendMail>
+                                  </Sequence>
+                                </If.Else>
+                              </If>
+                            </Sequence>
+                          </ActivityAction>
+                        </uix:NApplicationCard.Body>
+                        <uix:NApplicationCard.TargetApp>
+                          <uix:TargetApp Area="89, -9, 1840, 1098" BrowserType="Chrome" ContentHash="B_b2o7x_hk-7-GC5xD-bDA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAzPSURBVGhDxZkLVJVVFsdvSvjCBES5Khfu5c19cXkrL0FKQRGwVWZNJbOqyWYqdaq1ml7YalylaZCplPjMnGmmGi1bTY0aM5MvyqTHqqwpUQQfqVzBJiHg7Nn7PL77XfxEK2fmrPVf/733OZfvt88531XUdDnG8ICBwbPMoZVPxFuq17liNu/Ldjd9nefxnpiUDicmZcDX+SneDyY4mzanJtQ/EWepnjIquCJicKBVfvz/Mwj6Tkv43M2e+HoFKlwXF6pc6HhhmhTGBalse3pi48zwkbP/p80Q+APWsVX/yktuO1GYxjgYwvg5gROkBFU1lYs4DY5NTGHHC7AhVE1C1Lr/eiMPWMcguLoaAkIDQ/HaRAIUO30MYw5JsQQVcSrPhVRMngr3R5mr5OMu36Cd2ZHuaOS7x3eQYPxdA5W7qoAUuJZPVPVUOJrvwQbRuVJ4Tt6Q5Wi6bKcxMzxs9le5yV7fTqYKIA1UDyuloPJTmB5Sq+cRKMUIzcF9auVzKfB5tss7eeSIConx0wYdp4JVYGo3CU44ApJLQA4pd1K4ACWwVoLkcTI2hq6g8z08FlIxep4HfmsJ/2lX6r5Ic5V+d30wupgA0NWu8ViC8DkZ62utucnYCMKRIyB5i4zJW3J0sXBsYvSPa4K+2tQx93vs0gWg2DEeE5ByqikgWedgqo7ABOmTgFY6Qsp2s5nhIbMlXv+DXp4vJrjaOCAdOz6UHzvlOmm7KB0fJmICQ1eQLTlusZPkBKW8jzhon5grR+jTLHtbxKArL/5iN2TZm/x2kYAolkB657EC1Evbxb65BMx2MQ2QYgnZPIFiN8ZC+rx5gpO9lRzXKDGNB70w2i6SdOD+gD4YLoNdJTjlApBAlCMQgjfragQocprzuZCL6zCumWcJXyBx/Udg2FDr0/MLfLuJUPhD1AslgXwxzXFXQqCW4hxoX1MLnfs/gO6jraCN7g5g7fug99AS6Gksg56GdFQadO9NZT1700ROrmKc69HmeKzp1Da3NzhoYLDE9g3rnNT1+esrYP/UDAmrg+OAEljukn5Xj11XzKEvdbBvt2IjpRIqhXXv9bDuPR4ElqANvI4NUi2Fx6Im8kdvM/ufQuDIodbUP1wLaai7fj9ZA6Nj9ocWoqPmwiP11iyC3o4OiSbGUS+DNz/qgrr6TliF+vuBH+CrYz1yVo6eDjyRxQjkQdBk7gJW5ag9VBPCBlFuXj/1N6f/KYTmR1Z6NpWzlE0VkLppBrx1fZYEFPfU7y7SXcWY7uOZ1SsljRhbG7tgzvrvIKPqDGQuaOeesUAK4/Kas7jmB7lajN4jtQoMevYkY4yOcS+ByxjnxdxuJzZFsRvuvSFsrsQ3mRIXFjZ6XipnBE+N3Lq4WMBK6MPjCRpdaYIL2mqekgi0471w5zoBni6B0ymW4nVy2RStpc+ogSfBoYRceJ1cEhYdRc5jrHXvcfD69hXWeg5P1yd5YxlLxgZSXqoAD4p8+Z057PB4B8Od5sAUH5J5S8Vkpq4NgUyv7vADTnvMJ62mmyfRZ7Qm8CXv2V+MkA7WvZsAnRg7EdgX9+wmd6DsWi142IBg01Vp4eWejeXQVzlryuCzfBc7lEXg1IQTyA9l2dnZN7eIB+P41dqzCOrVScCm+tW8vhznVH4HflYN1v6+hEZALoJ1YJ5EOTaAOTk1wXM73FoyotI09iZHdfKLZSBUzp0acL84nT11T54G3ZTlgKbxDmiZMVk+EuANvPMEYizRhLF8c2/s75I/Dd/r98drcEJJmmMj6InYDMWJXEvvHV1jinlwQr17Qxm4Nkxn+iZcG0oZ1Ruu8QCHlzr9zJPycQDTlrZDyqNenxDIL7+QdOtu151Cb/NyCY2AuxIYqYeEuazp5hLhtScjtpiSlhQ1uTdMByO51peyGxcWsaaMJHYQ1ZRph3Mfvs8fdgC/Fj0IQCIQFfevNoOaV3sX2JkGDojQQrsTOHT3zjhqBGvxmMchPOXx8M2rtiaTc/005l6PwCgXVymPqU4x1d4oT+ENHMQG1Mv77uc/QDICcT0iXQIK19f0dXRaj1JrXlfXqLMFAeM5aM+uOJ0Lde+MZdgM955dsXDyrzavybWuFJzrEBb9QipaVgwH0xPZN2kJTDwJoPbdc+BGCCUF61cziBW8vr5yx/fyp+J7sDOWAFExHFKpe2c069kZw+d5jWJ0k2PdVOZESH9NA+daFMaOtVOZHVVz23j4Ji1Ra4AeqiD0cvWT951zP3AI3Deshopps6AiNxNyYiMhxxbKKtLC2LyycHh9YQR437EhbLTQrhhqBLrfs2Fz6BibkpZP8drXljAHAaMoJnesmcpzqtvXlLDM2mL4OMeOf0lr4Q1s2d8JrofbwPnwae4Ex10f93G11jn/S0gumgeeCDOkjAntV1mRobDoNjMc3xqF4FY8BRuCo96zYlM2MMUuLmgiSFISgmrg6EpUJz04Nwe+39fAG2jFF4+AhAScsfznXLe8Ap5IiyFsf8qNDoXtS8dx8O73Ihnp6z+PazJF/CZ1s331VNxlAWtfXeIXJ60uZiRex3X7Xl3FG6BRubodHAjlQEjh/eihk+AueQw8BnA/Quz5uWbo+ocFuv9pYduXhdebzLPs1QJOwPJmZE5KrJuCDZAXM9Ks6nKJD7D5wy6wP3Qa7AjIhTHB8lofOWeuMQL6SXrtcTOeggWW3j2ixjRiwrhKguSgdcVA4s3UKYmakMgbjn4sWwCYXdcBSQioRLBJD53SwKnmqNwKnrGjDGGUPOYQw9hI6RGhsHP5GCjLHVxuGjgkIJjDrSqGhFWTeROJPMam0PWiGq0p+uNs6Oj6jjfQ0tYLVy/2QiJCE3ji74T74tPgzrzeEESJgNPGhUHy6BFcFF+sibnTw5g1fKD4Jd9yX0Z94qopEnQKJLwwGeExf0HVRJ3nsrZwdy1vgAY1cWtdOwc+T/MO9HvvOejYkZBwVSBkWcdwUZyKtYs0wQIGXDGGNxBcFDk3AcGU4p+/hvnyyX51Pve8qD23b6NsQYy/7OuESYvaIB7BE1DkjhnLjB4uhICpuNsJwwNh/i9vhtbmZtRhmDf7JojHGs2ljLlwE2FDB83hDQwYHBAcW13ojUM4EgeUkOTxUjRHrq/RSXR0iuukxhetPbDtsy5Ytu3fUFJYYvhwJTdemcwoM5w6cUJ+GuDEsaOQbhnN54w+oxQTOvxt3gCN0NLoKgUVX4uwtVez+NprMEZhLVbmsSvRZR4n5ye+9Av22oF35OP9R158lOHDlVQDbadOyk8AnD75La9drAF3ePAZiS9OIXpJQZsCi1uJIufx1X45QWs5zcm8YOPNsHBnLext/QiOdBznMARi9HC636QM3OmYIQPgjuvK4MCnn8AXn3wMt19bymsZlnBtndHPSDaHdEp8MUKmRVfhDnOYmJVFTAPnriTymBU0z09Ei6keu0KIauSeiJHM6OEpZuGxwwKgwB4Lc2bOgLrqJbCq+mkeFyTFQFxQgFxr3IDfCahheTCrUUEoKfjYFUVS+vm+ub5WBMmJ4ec/HIHoWyYpeAg8cf88fmX6jlPfnoAF8+/BNYP5WqMmkkaNOCCxfSMgdLDV9nS+N2Z5ESgRiN6jl09iwgsZxQRLLlTI55Sc+VbDE3CNGs7/9tnVJX4XYL2+f6VQcee5c5AdY8G1V533eZItJGiLxPYfwzPNlbbnChlJgEySwvg5dBLm0ei+NWKOcq2OnniL0/DhrrDhkJ9gg+amg3DG2wZn2k5D+xkvF8VUaz50ENdE87VGP0P7GjUaoSXRCwjESLZlBRqkVl9WeN46UmxVtuHDxYs5EvITbfgOxPA77yes0Zxv7fk/I3DggP7/uT24xFrFwVBWhLZJJxEcj5/FeBk1Vcilzcuc3Jnd56tUAhEY7W5/0uD7NHHB69N3DHWGVUQ+letFUA3S9mwhRD07EeEnMopVzYZrqE6inD7D40ezGH4b+QH4dhXr9JIaieb81grR1+eVAwZESMSLj4CQwdaIx7KaOGANgtdIx5xDYhxVk48Sc5q0+Xx2493RfhA/R6FDAi/tv5v6jhHFUVUKLBKhrDUTOWhkNcXCVRxVLeZIOSvGw6G3Q2DFr42/TX6MzEFDjP+D41IHncbIGxPWEShB6mVZmscbsFTn8TmMeb3uT/hr4I5BrHvHYNi2aBjk2vyvxKXIHR7SftWgK0slxs8f1EhQhrlyzP1pjQTOgZ/J1yRq+ZC9fDzB+7R9EBx5eRC7u+TSTyM6JGgr3nmLfPTlH9QMvezBFdHVo+5y1Y99JLOJmohYkstefmUcnHw9wPvVpoCmVx8P2LzkroHVt0y5YnbwsCuCgwID8vFKVMWEBL1Ff6riLp8lYfwl1ei60Br5GINhMv0HQ3Dd/FE//gIAAAAASUVORK5CYII=" InformativeScreenshot="693ef6acc0b1c93b585cece1651df8d7.jpg" Reference="qtKZT-ISXkejcijuLne70w/hjD1WpUQV0eHGTXvoDn-cQ" Selector="&lt;html app='chrome.exe' title='RPA Stock Market' /&gt;" Title="New Tab" Url="[Web_url]" Version="V1" />
+                        </uix:NApplicationCard.TargetApp>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NApplicationCard>
+                    </TryCatch.Try>
+                    <TryCatch.Catches>
+                      <Catch x:TypeArguments="s:ApplicationException" sap:VirtualizedContainerService.HintSize="520,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_5">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ActivityAction x:TypeArguments="s:ApplicationException">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="s:ApplicationException" Name="exception" />
+                          </ActivityAction.Argument>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334.4,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Error" Message="[&quot;The Application Is Either Failed ,Not Opening ,Not Working , or Not Responding &quot;]" />
+                        </ActivityAction>
+                      </Catch>
+                      <Catch x:TypeArguments="sma:LoopFlowException" sap:VirtualizedContainerService.HintSize="520,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_6">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ActivityAction x:TypeArguments="sma:LoopFlowException">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="sma:LoopFlowException" Name="exception" />
+                          </ActivityAction.Argument>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334.4,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Error" Message="[&quot;The Flow Of The Loop Broke&quot;]" />
+                        </ActivityAction>
+                      </Catch>
+                    </TryCatch.Catches>
+                  </TryCatch>
+                </Sequence>
+              </Sequence>
+            </ActivityAction>
+          </ui:ForEachRow.Body>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ForEachRow>
+      </Sequence>
+    </Sequence>
+  </Sequence>
+</Activity>

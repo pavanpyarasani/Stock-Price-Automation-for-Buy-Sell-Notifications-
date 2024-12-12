@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Opening Each Stock In Google",
+  "Type": "App",
+  "Id": "Mg48ZwQBEUycHEU2xwtHFA",
+  "Reference": "qtKZT-ISXkejcijuLne70w/Mg48ZwQBEUycHEU2xwtHFA",
+  "Created": "2024-12-05T06:48:51.4625366Z",
+  "Updated": "2024-12-05T06:48:51.4625366Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

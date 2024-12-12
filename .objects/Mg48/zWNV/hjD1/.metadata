@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Opening Each Stock In Google",
+  "Type": "Screen",
+  "Id": "hjD1WpUQV0eHGTXvoDn-cQ",
+  "Reference": "qtKZT-ISXkejcijuLne70w/hjD1WpUQV0eHGTXvoDn-cQ",
+  "ParentRef": "qtKZT-ISXkejcijuLne70w/zWNV2Dh3a0-CAH2lPeBMEg",
+  "Created": "2024-12-05T06:48:51.4833935Z",
+  "Updated": "2024-12-05T06:48:51.4833935Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

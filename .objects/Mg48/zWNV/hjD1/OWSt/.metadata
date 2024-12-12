@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Exxon RPA Corp.",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "OWStvbySDUWzTYMsVRQsGg",
+  "Reference": "qtKZT-ISXkejcijuLne70w/OWStvbySDUWzTYMsVRQsGg",
+  "ParentRef": "qtKZT-ISXkejcijuLne70w/hjD1WpUQV0eHGTXvoDn-cQ",
+  "Created": "2024-12-05T06:48:51.810295Z",
+  "Updated": "2024-12-05T06:48:51.810295Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
